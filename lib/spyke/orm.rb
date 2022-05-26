@@ -37,7 +37,7 @@ module Spyke
       def create(attributes = {})
         record = new(attributes)
         record.save
-        record
+        #record
       end
 
       def destroy(id = nil)

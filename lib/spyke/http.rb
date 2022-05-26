@@ -98,6 +98,9 @@ module Spyke
 
         add_errors_to_model(result.errors)
         self.attributes = result.data
+
+        #  So that save will return a boolean (instead of a Hash)
+        result.errors.none?
       end
     end
 
